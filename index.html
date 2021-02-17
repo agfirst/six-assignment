@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand fw-bold" style="color: #3C2D66;" href="#">Image Slider</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" href="#">About</a>
+              <a class="nav-link active" href="#">Recipes</a>
+              <a class="nav-link active" href="#">Blog</a>
+          </div>
+      </div>
+  </nav>
+  <form class="col-md-6 m-auto py-5">
+      <div class="input-group mb-3">
+          <input id="search" type="text" class="form-control" placeholder="Search Image for create slider..." required>
+          <div class="input-group-append">
+              <button id="search-btn" type="button" class="btn text-light" style="background-color: #3C2D66 !important;">Search</button>
+          </div>
+      </div>
+  </form>
+
+
+  <!-- snipper -->
+  <div class="spinner d-flex justify-content-center d-none">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+  </div>
+
+
+  <!-- images -->
+    <section class="images">
+        <div class="gallery-header justify-content-center my-5">
+          <h5 class="head-title p-2">Select image for create slider</h5>
+          <div class="col-md-6">
+            <div class="input-group p-2 w-75">
+                <input id="duration" type="number" class="form-control" placeholder="slider change duration">
+                <div class="input-group-append">
+                    <button id="create-slider" type="button" class="btn text-light" style="background-color: #3C2D66 !important;">Create Slider</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- </div> -->
+      <div class="row gallery">
+
+      </div>
+    </section>
+
+
+    <!-- slider -->
+    <div class="main-content">
+      <section class="mt-5" id="sliders">
+
+      </section>
+      <div class="dots d-flex mt-2 w-100 justify-content-center align-items-center bg-light">
+        <span class="dot" onclick="changeSlider(-1)"></span>
+        <span class="dot" onclick="changeSlider(1)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Optional JavaScript -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
