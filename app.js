@@ -151,8 +151,21 @@ const imagesHandler = () => {
   getImages(search.value)
   sliders.length = 0;
 }
+
+
 // Snipper
 const snipperHandler = () => {
   const sni = document.querySelector(".spinner");
   sni.classList.toggle('d-none')
 }
+
+
+// Contact 
+const contact = document.getElementById('contactMenu');
+  contact.addEventListener("click", function(){
+  const newVariable = document.getElementById('smple');
+  newVariable.style.display = 'none';
+
+  const showToCssHidden = document.getElementById('contactSection');
+  showToCssHidden.style.display = 'block';
+})
